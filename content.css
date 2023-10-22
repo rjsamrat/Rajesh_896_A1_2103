@@ -1,0 +1,63 @@
+/* content.css for other pages */
+
+/* Common styles for all screen sizes */
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background-color: skyblue;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(188, 207, 80);
+}
+
+.main {
+    flex: 2;
+    padding: 20px;
+    background-color: rgb(32, 199, 124);
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+
+/* Responsive media queries for tablet and mobile screens */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        order: -1;
+    }
+}
+
+/* Add more specific styles for elements as per your requirements */

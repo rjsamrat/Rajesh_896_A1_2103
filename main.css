@@ -1,0 +1,77 @@
+/* main.css for home page */
+
+/* Common styles for all screen sizes */
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background-color: skyblue;
+    padding: 20px 0;
+}
+
+#img {
+    height: 260px;
+    width: 300px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(188, 207, 80);
+}
+
+.main {
+    flex: 2;
+    padding: 20px;
+    background-color: rgb(32, 199, 124);
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+}
+
+nav {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content:space-between;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  link {
+    text-decoration: none;
+  }
+
+/* Responsive media queries for tablet and mobile screens */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        order: -1;
+    }
+}
+
+/* Add more specific styles for elements as per your requirements */
